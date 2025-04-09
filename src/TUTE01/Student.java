@@ -1,4 +1,4 @@
-package TUTE01;//Question 01 
+package TUTE01;//Question 01
 
 import java.util.Scanner;
 
