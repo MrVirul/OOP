@@ -28,6 +28,13 @@ public class SavingAccount {
     public double getBalance(){
         return balance;
     }
+
+    public void depositAmount(double amount){
+        if (amount > 0){
+            this.balance = this.balance + amount;
+            System.out.println("Deposited " + amount + " to account number " + accountNumber + " account balance is " + balance);
+        }
+    }
 public static void main(String[] args) {
     
 }
