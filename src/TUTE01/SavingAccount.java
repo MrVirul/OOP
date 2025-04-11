@@ -17,6 +17,13 @@ public class SavingAccount {
     public void setAccountHolderName(String accountHolderName){
         this.accountHolderName = accountHolderName;
     }
+
+    public int getAccountNumber(){
+        return accountNumber;
+    }
+    public void setAccountNumber(int accountNumber){
+        this.accountNumber = accountNumber;
+    }
 public static void main(String[] args) {
     
 }
