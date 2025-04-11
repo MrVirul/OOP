@@ -24,6 +24,10 @@ public class SavingAccount {
     public void setAccountNumber(int accountNumber){
         this.accountNumber = accountNumber;
     }
+
+    public double getBalance(){
+        return balance;
+    }
 public static void main(String[] args) {
     
 }
