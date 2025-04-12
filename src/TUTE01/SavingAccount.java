@@ -11,7 +11,7 @@ public class SavingAccount {
         this.accountHolderName = "No name";
         this.balance = 0.00;
     }
-    public String getaccountHolderName(){
+    public String getAccountHolderName(){
         return accountHolderName;
     }
     public void setAccountHolderName(String accountHolderName){
