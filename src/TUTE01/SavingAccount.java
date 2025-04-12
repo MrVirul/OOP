@@ -33,7 +33,22 @@ public class SavingAccount {
         if (amount > 0){
             this.balance = this.balance + amount;
             System.out.println("Deposited " + amount + " to account number " + accountNumber + " account balance is " + balance);
+        }else{
+            System.out.println("Invalid amount to deposit!!!");
         }
+        public void withdrawAmount(double amount){
+            if(amount > 0 && amount <= balance){
+                this.balance = this.balance - amount;
+                System.out.println("Withdrawn " + amount + " from account number " + accountNumber + " account balance is " + balance);
+            }
+        }else{
+            System.out.println("Invalid amount to withdraw!!!");
+        }
+    }
+    public void displayAccountDetails(){
+        System.out.println("Account Number: " + accountNumber);
+        System.out.println("Account Holder Name: " + accountHolderName);
+        System.out.println("Account Balance: " + balance);
     }
 public static void main(String[] args) {
     
