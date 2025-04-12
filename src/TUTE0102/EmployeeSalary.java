@@ -25,7 +25,6 @@ public class EmployeeSalary {
 
     public void setEmployeeType(char employeeType) {
         this.employeeType = employeeType;
-    }
 
     if(employeeType == '1'){
         this.OTRate = 1000;
@@ -37,17 +36,31 @@ public class EmployeeSalary {
         System.out.println("Invalid employee type");
         this.OTRate = 0;
     }
-
-    public set BasicSalary(double BasicSalary) {
+    }    
+    public void setEmployeeType(char employeeType) {
+        this.employeeType = employeeType;
+    
+        if (employeeType == '1') {
+            this.OTRate = 1000;
+        } else if (employeeType == '2') {
+            this.OTRate = 1500;
+        } else if (employeeType == '3') {
+            this.OTRate = 1700;
+        } else {
+            System.out.println("Invalid employee type");
+            this.OTRate = 0;
+        }
+    }
+    public void setBasicSalary(double BasicSalary) {
         this.BasicSalary = BasicSalary;
     }
     public void setOTHourse(int OTHourse) {
         this.OTHourse = OTHourse;
     }
 
-    public calculateTotalSalary(){
+    public void calculateTotalSalary(){
         totalSalary = BasicSalary + (OTHourse * OTRate);
-        return totalSalary;
+        System.out.println("Employee Total Salary is : Rs." + totalSalary);
     }
 
     public static void main(String[] args) {
@@ -55,10 +68,17 @@ public class EmployeeSalary {
         EmployeeSalary employee1 = new EmployeeSalary();
         Scanner input = new Scanner(System.in);
 
-               System.out.print("Enter employee type (1, 2, or 3): ");
-        char employeeType = input.next().charAt(0); // Read the input
-        employee1.setEmployeeType(employeeType);    // Set the employee type
+        System.out.print("Enter employee type (1, 2, or 3): ");
+        employee1.setEmployeeType(input.next().charAt(0));
         
+        System.out.print("Enter basic salary: ");
+        employee1.setBasicSalary(input.nextDouble());
+
+        System.out.print("Enter overtime hours: ");
+        employee1.setOTHourse(input.nextInt());
+
+        employee1.calculateTotalSalary();
+
     }
     
 }
