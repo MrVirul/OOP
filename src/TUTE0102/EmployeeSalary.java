@@ -55,8 +55,10 @@ public class EmployeeSalary {
         EmployeeSalary employee1 = new EmployeeSalary();
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter employee type (1, 2, or 3): ");
-
+               System.out.print("Enter employee type (1, 2, or 3): ");
+        char employeeType = input.next().charAt(0); // Read the input
+        employee1.setEmployeeType(employeeType);    // Set the employee type
+        
     }
     
 }
