@@ -47,9 +47,12 @@ public class SavingAccount {
         }
     }
     public void displayAccountDetails(){
-        System.out.println("Account Number: " + accountNumber);
-        System.out.println("Account Holder Name: " + accountHolderName);
-        System.out.println("Account Balance: " + balance);
+        System.out.println();
+        System.out.println("=============================================");
+        System.out.println("Account Details:");
+        System.out.println("Account Number: " + getAccountNumber());
+        System.out.println("Account Holder Name: " + getAccountHolderName());
+        System.out.println("Account Balance: " + getBalance());
     }
 public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
@@ -62,10 +65,15 @@ public static void main(String[] args) {
     account1.setAccountHolderName(input.nextLine());
 
     System.out.print("Enter initial deposit: ");
+    account1.depositAmount(input.nextDouble());
 
+    System.out.print("Enter Deposit amount: ");
+    account1.depositAmount(input.nextDouble());
 
+    System.out.print("Enter Withdraw amount: ");
+    account1.withdrawAmount(input.nextDouble());
 
-
+   account1.displayAccountDetails();
 
     }
 
