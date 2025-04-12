@@ -51,9 +51,11 @@ public class EmployeeSalary {
     }
 
     public static void main(String[] args) {
-        
+
         EmployeeSalary employee1 = new EmployeeSalary();
         Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter employee type (1, 2, or 3): ");
 
     }
     
