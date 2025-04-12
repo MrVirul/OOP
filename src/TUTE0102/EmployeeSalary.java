@@ -1,5 +1,6 @@
 package TUTE0102;
 
+import java.util.Scanner;
 public class EmployeeSalary {
     private char employeeType;
     private double BasicSalary;
@@ -44,5 +45,16 @@ public class EmployeeSalary {
         this.OTHourse = OTHourse;
     }
 
+    public calculateTotalSalary(){
+        totalSalary = BasicSalary + (OTHourse * OTRate);
+        return totalSalary;
+    }
+
+    public static void main(String[] args) {
+        
+        EmployeeSalary employee1 = new EmployeeSalary();
+        Scanner input = new Scanner(System.in);
+
+    }
     
 }
