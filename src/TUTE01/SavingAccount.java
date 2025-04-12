@@ -54,27 +54,27 @@ public class SavingAccount {
         System.out.println("Account Holder Name: " + getAccountHolderName());
         System.out.println("Account Balance: " + getBalance());
     }
-public static void main(String[] args) {
-    Scanner input = new Scanner(System.in);
-    SavingAccount account1 = new SavingAccount();
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        SavingAccount account1 = new SavingAccount();
 
-    System.out.print("Enter account number: ");
-    account1.setAccountNumber(input.nextInt());
+        System.out.print("Enter account number: ");
+        account1.setAccountNumber(input.nextInt());
+        input.nextLine();
 
-    System.out.print("Enter account holder name: ");
-    account1.setAccountHolderName(input.nextLine());
+        System.out.print("Enter account holder name: ");
+        account1.setAccountHolderName(input.nextLine());
 
-    System.out.print("Enter initial deposit: ");
-    account1.depositAmount(input.nextDouble());
+        System.out.print("Enter initial deposit: ");
+        account1.depositAmount(input.nextDouble());
 
-    System.out.print("Enter Deposit amount: ");
-    account1.depositAmount(input.nextDouble());
+        System.out.print("Enter Deposit amount: ");
+        account1.depositAmount(input.nextDouble());
 
-    System.out.print("Enter Withdraw amount: ");
-    account1.withdrawAmount(input.nextDouble());
+        System.out.print("Enter Withdraw amount: ");
+        account1.withdrawAmount(input.nextDouble());
 
-   account1.displayAccountDetails();
-
+        account1.displayAccountDetails();
     }
 
 }
