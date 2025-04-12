@@ -12,6 +12,11 @@ public class EmployeeSalary {
         this.OTHourse = 0;
     }
 
-   
+    //overloaded constructor
+    public EmployeeSalary(char employeeType, double BasicSalary, int OTHourse){
+        this.employeeType = employeeType;
+        this.BasicSalary = BasicSalary;
+        this.OTHourse = OTHourse;
+    }
 
 }
