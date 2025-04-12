@@ -45,7 +45,7 @@ public class EmployeeSalary {
     }
 
     public void calculateTotalSalary(){
-        totalSalary = basicSalary + (otHours * otRate);
+        double totalSalary = basicSalary + (otHours * otRate);
         System.out.println("Employee Total Salary is : Rs." + totalSalary);
     }
 
