@@ -8,13 +8,14 @@ public class StudentApp {
         Student student1 = new Student();
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Enter Student ID: ");
+        System.out.print("Enter Student ID: ");
         student1.setStudentID(input.nextInt());
 
-        System.out.println("Enter Student Name: ");
+        System.out.print("Enter Student Name: ");
         student1.setStudentName(input.nextLine());
+        input.nextLine(); 
 
-        System.out.println("Enter Student GPA: ");
+        System.out.print("Enter Student GPA: ");
         student1.setGPA(input.nextDouble());
 
         student1.displayStudentDetails();
