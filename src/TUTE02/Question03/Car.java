@@ -41,5 +41,9 @@ public class Car {
         this.price = price;
     }
 
-
+    public void displayCarDetails() {
+        System.out.println("Car Registration Number: " + registrationNumber);
+        System.out.println("Car Model Name: " + modelName);
+        System.out.println("Car Price: " + price);
+    }
 }
