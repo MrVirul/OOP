@@ -40,7 +40,7 @@ public class Customer {
         this.unitConsumed = unitConsumed;
     }
 
-    public void calculateBill(){
+    public double calculateBill(){
         double billAmount = 0.0;
         if(this.unitConsumed >= 100){
             billAmount = unitConsumed * 20;
@@ -49,7 +49,13 @@ public class Customer {
         } else if(this.unitConsumed >= 300 ){
             billAmount = unitConsumed * 40;
         }
+        return billAmount;
         }
-
+public void displayCustomerDetails(){
+    System.out.println("Customer ID: " + getCustomerId());
+    System.out.println("Customer Name: " + getCustomerName());
+    System.out.println("Units Consumed: " + getUnitConsumed());
+    System.out.println("Bill Amount: " + calculateBill());
+}
 
 }
