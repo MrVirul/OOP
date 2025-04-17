@@ -9,6 +9,9 @@ public class Car {
         this.registrationNumber = "Not Registered";
         this.modelName = "Not Specified";
         this.price = 0.0;
+        System.out.println("Registration Number: " + registrationNumber);
+        System.out.println("Model Name: " + modelName);
+        System.out.println("Price: " + price);
     }
 
     public Car(String registrationNumber, String modelName, double price) {
