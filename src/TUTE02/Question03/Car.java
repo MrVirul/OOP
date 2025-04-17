@@ -11,5 +11,11 @@ public class Car {
         this.price = 0.0;
     }
 
-   
+    public Car(String registrationNumber, String modelName, double price) {
+        this.registrationNumber = registrationNumber;
+        this.modelName = modelName;
+        this.price = price;
+    }
+
+
 }
