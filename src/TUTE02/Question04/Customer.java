@@ -40,6 +40,16 @@ public class Customer {
         this.unitConsumed = unitConsumed;
     }
 
-  
+    public void calculateBill(){
+        double billAmount = 0.0;
+        if(this.unitConsumed >= 100){
+            billAmount = unitConsumed * 20;
+        } else if(this.unitConsumed < 100 && unitConsumed < 300){
+            billAmount = unitConsumed * 30;
+        } else if(this.unitConsumed >= 300 ){
+            billAmount = unitConsumed * 40;
+        }
+        }
+
 
 }
