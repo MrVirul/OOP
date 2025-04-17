@@ -1,4 +1,4 @@
-package TUTE02;
+package TUTE02.Question01;
 
 public class Student {
     private int studentID;
@@ -45,9 +45,14 @@ public class Student {
         }
         }
         public void displayStudentDetails() {
+            
+            System.out.println();
+            System.out.println("----------------------------------------------------");
+            System.out.println();
             System.out.println("Student ID: " + studentID);
             System.out.println("Student Name: " + studentName);
             System.out.println("GPA: " + GPA);
+            
         }
 
 }
