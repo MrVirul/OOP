@@ -7,18 +7,19 @@ public class CustomerApp {
         Customer customer1 = new Customer();
 
         System.out.print("Enter Customer ID: ");
-        input.nextInt(customer1.getCustomerId());
+        customer1.setCustomerId(input.nextInt());
 
-        System.out.println("Enter Customer Name: ");
-        input.next(customer1.getCustomerName());
+        System.out.print("Enter Customer Name: ");
+        customer1.setCustomerName(input.next());
 
-        System.out.println("Enter Units Consumed: ");
-        input.nextInt(customer1.getUnitConsumed());
+        System.out.print("Enter Units Consumed: ");
+        customer1.setUnitConsumed(input.nextInt());
 
         System.out.println();
         System.out.println("_____________________________");
         System.out.println("_____________________________");
         System.out.println();
         customer1.displayCustomerDetails();
+        System.out.println();
     }
 }
