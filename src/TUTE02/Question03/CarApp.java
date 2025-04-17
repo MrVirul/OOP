@@ -5,6 +5,6 @@ public class CarApp {
 
         Car car1 = new Car();
 
-        Car car2 = new Car();
+        Car car2 = new Car("CAB - 8209", "Nissan Leaf", 3500000.0);
     }
 }

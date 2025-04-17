@@ -15,9 +15,11 @@ public class Car {
     }
 
     public Car(String registrationNumber, String modelName, double price) {
-        this.registrationNumber = "CAB - 8209";
-        this.modelName = "Nissan Leaf";
-        this.price = 3500000.0;
+        this.registrationNumber = registrationNumber;
+        this.modelName = modelName;
+        this.price = price;
+        System.out.println();
+        System.out.println("_______________________________");
         System.out.println("Registration Number: " + registrationNumber);
         System.out.println("Model Name: " + modelName);
         System.out.println("Price: " + price);
