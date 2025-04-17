@@ -1,4 +1,4 @@
-package TUTE0102;
+package TUTE01;
 
 import java.util.Scanner;
 public class EmployeeSalary {
