@@ -5,7 +5,7 @@ public class Customer {
     private String customerName;
     private int unitConsumed;
 
-    public Customer(){
+    public Customer() {
         this.customerId = 0;
         this.customerName = "Not Specified";
         this.unitConsumed = 0;
@@ -16,6 +16,7 @@ public class Customer {
         this.customerName = customerName;
         this.unitConsumed = unitConsumed;
     }
+
     public int getCustomerId() {
         return customerId;
     }
@@ -40,22 +41,23 @@ public class Customer {
         this.unitConsumed = unitConsumed;
     }
 
-    public double calculateBill(){
+    public double calculateBill() {
         double billAmount = 0.0;
-        if(this.unitConsumed >= 100){
+        if (this.unitConsumed >= 100) {
             billAmount = unitConsumed * 20;
-        } else if(this.unitConsumed < 100 && unitConsumed < 300){
+        } else if (this.unitConsumed < 100 && unitConsumed < 300) {
             billAmount = unitConsumed * 30;
-        } else if(this.unitConsumed >= 300 ){
+        } else if (this.unitConsumed >= 300) {
             billAmount = unitConsumed * 40;
         }
         return billAmount;
-        }
-public void displayCustomerDetails(){
-    System.out.println("Customer ID: " + getCustomerId());
-    System.out.println("Customer Name: " + getCustomerName());
-    System.out.println("Units Consumed: " + getUnitConsumed());
-    System.out.println("Bill Amount: " + calculateBill());
-}
+    }
+
+    public void displayCustomerDetails() {
+        System.out.println("Customer ID: " + getCustomerId());
+        System.out.println("Customer Name: " + getCustomerName());
+        System.out.println("Units Consumed: " + getUnitConsumed());
+        System.out.println("Bill Amount: " + calculateBill());
+    }
 
 }
