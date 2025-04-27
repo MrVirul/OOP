@@ -6,8 +6,6 @@ public class EmployeeSalary {
     private double basicSalary;
     private int otHours;
     private int otRate;
-    private double totalSalary;
-
     //default constructor
     public EmployeeSalary() {
         this.employeeType = '0';
