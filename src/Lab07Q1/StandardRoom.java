@@ -1,4 +1,4 @@
-package Lab07;
+package Lab07Q1;
 
 class StandardRoom extends Room
 {
@@ -16,8 +16,11 @@ class StandardRoom extends Room
 
  @Override
  public void displayRoomDetails(){
+     System.out.println();
+  System.out.println("__Standard Room__");
     super.displayRoomDetails();
     System.out.println("Has WiFi: " + hasWiFi);
+    System.out.println("Room Cost for Standard Room: " + calculateRoomCost());
   }
  
 }

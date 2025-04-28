@@ -1,10 +1,9 @@
-package Lab07;
+package Lab07Q1;
 
 public class Room {
     protected int roomNumber;
     protected String guestName;
     protected int numberOfNights;
-    protected double discountPerNight = 10.0; 
 
     // Constructor
     public Room(int roomNumber, String guestName, int numberOfNights) {
@@ -15,12 +14,14 @@ public class Room {
     public void displayRoomDetails(){
         System.out.println("Room Number: " + roomNumber);
         System.out.println("Guest Name: " + guestName);
+        System.out.println("Number of Nights: " + numberOfNights);
     }
-    public double calculateRoomCost(){
+    public double calculateRoomCost() {
         return numberOfNights * 150.0;
     }
-        public double calculateTotalSalary(){
-        return calculateRoomCost() - (numberOfNights * discountPerNight/100);
+    public double calculateRoomCost(double discountPerNight) {
+            
+        return calculateRoomCost() - (numberOfNights * discountPerNight) /100;
         }
 
 }
