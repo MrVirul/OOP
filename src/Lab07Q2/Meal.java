@@ -3,7 +3,7 @@ package Lab07Q2;
 public class Meal {
     String orderID;
     String customerName;
-    int quantity;
+    static int quantity;
 
     public Meal (String orderID, String customerName, int quantity) {
         this.orderID = orderID;
@@ -24,10 +24,12 @@ public class Meal {
         System.out.println("Customer Name: " + customerName);
         System.out.println("Quantity: " + quantity);
        }
+
        public double calculateBill(){
         return 12.0 * quantity;
        }
-       public double calculateBill(double baseprice, int couponAmount){
+       public static double calculateBill(double baseprice, int couponAmount){
         return (baseprice * quantity) - couponAmount;
        }
+
 }

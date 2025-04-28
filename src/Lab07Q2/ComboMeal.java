@@ -12,6 +12,7 @@ public class ComboMeal extends Meal {
     public double calculateBill() {
         return (includesDrinkAndDessert ? 15.0 * quantity + 5.0 : 15.0 * quantity);
     }
+    @Override
     public void displayOrderDetails(){
         System.out.println();
         System.out.println("----Combo Meal Details----");

@@ -7,6 +7,7 @@ class RegularMeal extends Meal{
     public double calculateBill() {
         return super.calculateBill()*quantity;
     }
+    @Override
     public void displayOrderDetails(){
         System.out.println();
         System.out.println("----Regular Meal Details----");
@@ -14,5 +15,6 @@ class RegularMeal extends Meal{
         System.out.println("Meal Type : " + (isVegetarian?"Vegetarian":"Non-Vegetarian"));
         System.out.println("Total Bill for Regular Meal: " + calculateBill());
     }
+
 
 }
