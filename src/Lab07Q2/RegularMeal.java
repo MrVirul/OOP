@@ -3,6 +3,13 @@ package Lab07Q2;
 class RegularMeal extends Meal{
     boolean isVegetarian;
 
+    public RegularMeal(String orderID, String customerName, int quantity, boolean isVegetarian) {
+        super(orderID, customerName, quantity);
+        this.isVegetarian = isVegetarian;
+    }
+    public RegularMeal(String orderID, String customerName, int quantity) {
+
+    }
     @Override
     public double calculateBill() {
         return super.calculateBill()*quantity;
