@@ -4,10 +4,13 @@ public class RestaurantApp {
     public static void main(String[] args){
 
         RegularMeal regularMeal1 = new RegularMeal();
-        ComboMeal comboMeal1 = new ComboMeal("C001", "John Doe", 2, true);
+        ComboMeal comboMeal1 = new ComboMeal("C001", "John Doe",2,true);
 
-        Meal.calculateBill(0.0, 0);
-        Meal.calculateBill(15.0, 5);
+        regularMeal1.CalculateBill();
+        regularMeal1.CalculateBill(5);
+
+        comboMeal1.CalculateBill();
+        comboMeal1.CalculateBill(2);
 
         regularMeal1.displayOrderDetails();
         comboMeal1.displayOrderDetails();

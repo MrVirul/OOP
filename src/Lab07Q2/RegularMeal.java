@@ -7,12 +7,14 @@ class RegularMeal extends Meal{
         super(orderID, customerName, quantity);
         this.isVegetarian = isVegetarian;
     }
-    public RegularMeal(String orderID, String customerName, int quantity) {
-
+    // Constructor with default values
+    public RegularMeal() {
+        super();
+        this.isVegetarian = true;
     }
     @Override
-    public double calculateBill() {
-        return super.calculateBill()*quantity;
+    public double CalculateBill() {
+        return super.CalculateBill()*quantity;
     }
     @Override
     public void displayOrderDetails(){
@@ -20,7 +22,7 @@ class RegularMeal extends Meal{
         System.out.println("----Regular Meal Details----");
         super.displayOrderDetails();
         System.out.println("Meal Type : " + (isVegetarian?"Vegetarian":"Non-Vegetarian"));
-        System.out.println("Total Bill for Regular Meal: " + calculateBill());
+        System.out.println("Total Bill for Regular Meal: " + CalculateBill());
     }
 
 
