@@ -1,4 +1,4 @@
-package TUTE4Q1;
+package TUTE04.Question01;
 
 public class SmartApp {
     public static void main(String[] args) {

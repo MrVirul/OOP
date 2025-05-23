@@ -1,4 +1,4 @@
-package TUTE4Q2;
+package TUTE04.Question02;
 
 public class Engine {
     String engineType;
