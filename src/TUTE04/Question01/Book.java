@@ -1,4 +1,4 @@
-package TUTE04;
+package TUTE04.Question01;
 
 public class Book {
     private String title;
