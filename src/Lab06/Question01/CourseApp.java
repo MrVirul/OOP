@@ -1,6 +1,6 @@
 package Lab06.Question01;
 
-public class Main {
+public class CourseApp {
     public static void main(String []args){
          RegularCourse RegC1 = new RegularCourse();
          PremiumCourse PreC2 = new PremiumCourse("SE001","Software Engineering",5,true);
