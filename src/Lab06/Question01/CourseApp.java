@@ -8,13 +8,13 @@ public class CourseApp {
          RegC1.calculateTotalFee();
          PreC2.calculateTotalFee();
 
-        System.out.println("===Regular Course (Default Constructor===)");
+        System.out.println("===Regular Lab08.Question01.Course (Default Constructor===)");
          RegC1.displayCourseDetails();
 
         System.out.println();
         System.out.println();
 
-        System.out.println("===Premium Course (Parameterized Constructor)===");
+        System.out.println("===Premium Lab08.Question01.Course (Parameterized Constructor)===");
          PreC2.displayCourseDetails();
     }
 }

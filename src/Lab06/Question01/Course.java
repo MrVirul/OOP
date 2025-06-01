@@ -18,8 +18,8 @@ public class Course {
     }
 
     public void displayCourseDetails(){
-        System.out.println("Course ID is : " + courseID);
-        System.out.println("Course Name is : " + courseName);
+        System.out.println("Lab08.Question01.Course ID is : " + courseID);
+        System.out.println("Lab08.Question01.Course Name is : " + courseName);
         System.out.println("Duration Time : " + durationWeeks);
     }
     public double calculateTotalFee(){
