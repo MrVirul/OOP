@@ -1,4 +1,4 @@
-package FinalModelPaper;
+package FinalModelPaper.Question01;
 
 public class LibraryBook {
 
