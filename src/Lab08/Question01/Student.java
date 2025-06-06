@@ -32,7 +32,7 @@ public class Student {
         System.out.println("Student Name is : " + studentName);
         System.out.println("Student course count is : " + courseCount);
 
-        for (int i = 0; i >= courseCount; i++){
+        for (int i = 1; i >= courseCount; i++){
              if (course[i] != null) {
                  System.out.println("Course " + (i+1) + ": " + course[i].courseCode + " - " + course[i].courseTitle);
             }
