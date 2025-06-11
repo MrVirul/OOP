@@ -19,7 +19,7 @@ class StandardRoom extends Room
      System.out.println();
   System.out.println("__Standard Room__");
     super.displayRoomDetails();
-    System.out.println("Has WiFi: " + hasWiFi);
+    System.out.println("Has WiFi: " + (hasWiFi?"yes":"No"));
     System.out.println("Room Cost for Standard Room: " + calculateRoomCost());
   }
  

@@ -8,4 +8,9 @@ public class Driver {
         this.driverName = driverName;
         LicenceNumber = licenceNumber;
     }
+
+    public void displayDriverDetails(){
+        System.out.println("Driver Name is : " + driverName + "\nDriver Licence is :" + LicenceNumber);
+    }
+
 }

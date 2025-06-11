@@ -2,17 +2,15 @@ package FinalModelPaper.Question02;
 
 public class TransportApp {
     public static void main(String[] args) {
-        Engine dieselEngine = new Engine();
-        Engine turboDieselEngine = new Engine();
 
-        Driver busDriver = new Driver("senesh","A01");
-        Bus bus = new Bus("benz",120.0,dieselEngine,50,busDriver);
+        Driver busDriver = new Driver("Vrul" , "A1231");
+        Bus bus = new Bus("Benze",123.21,"dieselEngine",busDriver);
 
-        Driver truckDriver = new Driver("Virul","A02");
-        Truck truck = new Truck("TATA", 50.00, truckDriver, 100.0,turboDieselEngine);
+        Driver truckDriver = new Driver("senesh","A001");
+        Truck truck = new Truck("TATA",123.22,"diesel");
 
         bus.start();
-        System.out.println(busDriver);
+        System.out.println();
         truck.start();
     }
 }
